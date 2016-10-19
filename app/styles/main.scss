@@ -1,0 +1,192 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+.boton{
+  margin:0px;
+  width:100%;
+
+}
+
+/*To do loist*/
+#list {
+  display: block;
+  margin: 0 auto;
+  background: #efefef;
+
+  
+  padding: 0;
+  font-size: 1.2em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#list span {
+  font-size: 2em;
+  color: #516F83;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-bottom: thin solid #ccc;
+  text-transform: uppercase;
+  background: #fff;
+}
+
+#list-input {
+  width: 395px;
+  display: inline-block;
+
+  font-size: 1em;
+  border: none;
+  border-bottom: thin solid #ccc;
+  background: #efefef;
+  float: left;
+}
+
+#add-btn {
+
+  font-size: 1em;
+  height: auto;
+  color: #fff;
+  display: inline-block;
+  background: #87BD3E;
+  padding: 11.5px 3px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease;
+  float: left;
+}
+
+#add-btn:hover {
+  background: #516F83;
+  transition:  2s ;
+}
+
+#list li {
+  list-style: none;
+  border-bottom: thick solid #87BD3E;
+  color: #666;
+  cursor: pointer;
+  transition: all .2s ease;
+  background: #fff;
+  clear: both;
+}
+
+#list li:hover > .close-btn {
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+#list .close-btn {
+  content: "x";
+  font-weight: bold;
+  float: right;
+  color: #fff;
+  opacity: 0;
+  background: #c00;
+ 
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+#list .close-btn:hover {
+  background: #f00;
+}
+
+#list li:hover {
+  padding-left: 15px;
+  transition: all .2s ease;
+  border-bottom: thick solid #c65;
+}
+/**/
